@@ -29,10 +29,23 @@
 </table>
 
 <br>
+<%= link_to 'New Product', new_product_path %>
+
+<!-- https://stackoverflow.com/questions/8874291/rails-how-to-sum-columns -->
+<p>
+  Total product number is: <%= @products.count %>
+</p>
+<p>
+  The average price of all products is: <%= @products.average(:price) %>
+</p>
+<p>
+  The  quantity of stock of all products is: <%= @products.sum(:stock_quantity) %>
+</p>
+
 
 <% 100.times do %>
     <p><%= "Chunky Bacon" %></p>
 <% end %>
-<%= link_to 'New Product', new_product_path %>
+
 
 
