@@ -21,7 +21,6 @@ Here, open web brower and open http://localhost:3000/products and add products m
 
 * rails c
   * Product.create(name:'Chromecast', description:'description', price:35, stock_quantity:6000) 
-
 * git comands to add another 2 commits
 
 Created this git reop through github website
